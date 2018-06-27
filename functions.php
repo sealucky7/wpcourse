@@ -21,7 +21,8 @@
 
     add_action('after_setup_theme', function (){
         register_nav_menu('top', 'Верхнее меню');
-    })
+        add_theme_support('post-thumbnails');
+    });
 
 
 
