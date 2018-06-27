@@ -124,6 +124,13 @@ header .main-header{text-align: center;padding-top: 100px}
 /* ---------------------------------------------------------------------------- */
 .wrap-menu{background: #2B2D3F;}
 #menu {border-radius: 0;padding: 40px 0;text-transform: uppercase;}
+#menu li:last-child {
+  float:right;
+
+}
+#menu li:last-child a {
+  padding: 0;
+}
 #search {margin: auto;}
 #search input[type="text"] {
     background: url(../images/search-dark.png) no-repeat 10px 6px #fff;
@@ -239,7 +246,7 @@ article .info a{}
 article .info i.fa{line-height: 1.6;margin: 0 3px;}
 article .info{display: block;margin-top: 10px;font-size: 15px;}
 
-article img{display: block;width: 100%;margin-top: 10px;}
+article img{display: block;max-width: 100%;margin-top: 10px;}
 
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Footer--------------------------------- */

@@ -19,7 +19,7 @@
                 <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
               </div>
               <div class="art-content">
-                <?php the_post_thumbnail('full') ?>
+                <?php the_post_thumbnail('middle') ?>
              <!--   <img src="<?php /*echo IMG_DIR */?>/4.jpg" />-->
                 <div class="info"><i class="fa fa-calendar"></i> <?php the_date(); ?> <i class="fa fa-comments"></i> 1 Comment <i
                     class="fa

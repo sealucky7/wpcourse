@@ -48,44 +48,6 @@
         <nav class="wrap-menu">
             <div class="zerogrid">
                 <div id="menu-trigger">Menu</div>
-                <ul id="menu" style="display: none;">
-                    <li><a href="<?php echo home_url() ?>">Home</a></li>
-                    <li>
-                        <a href="#">Categories <i class="fa fa-chevron-down"></i></a>
-                        <ul>
-                            <li>
-                                <a href="#">Item 01</a>
-                            </li>
-                            <li>
-                                <a href="#">Item 02</a>
-                            </li>
-                            <li>
-                                <a href="#">Item 03 <i class="fa fa-chevron-right" style="margin: 2px 3px 2px;"></i></a>
-                                <ul>
-                                    <li><a href="#">Item 31</a></li>
-                                    <li><a href="#">Item 32</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Item 04 <i class="fa fa-chevron-right" style="margin: 2px 3px 2px;"></i></a>
-                                <ul>
-                                    <li><a href="#">Item 41</a></li>
-                                    <li><a href="#">Item 42</a></li>
-                                    <li><a href="#">Item 43</a></li>
-                                    <li><a href="#">Item 44</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="single.html">About</a></li>
-                    <li><a href="archive.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li style="float:right !important">
-                        <form method="get" action="/search" id="search" class="f-right">
-                            <input name="q" type="text" size="40" placeholder="Search..." />
-                        </form>
-                    </li>
-                </ul>
               <?php wp_nav_menu([
                 'theme_location' => 'top',
                 'container'      => 'ul',
