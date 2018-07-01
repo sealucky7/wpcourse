@@ -1,74 +1,76 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> class="no-js">
 <head>
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/fav.png">
+  <!-- Author Meta -->
+  <meta name="author" content="colorlib">
+  <!-- Meta Description -->
+  <meta name="description" content="">
+  <!-- Meta Keyword -->
+  <meta name="keywords" content="">
+  <!-- meta character set -->
+  <meta charset="UTF-8">
+  <!-- Site Title -->
+  <title><?php the_title(); ?></title>
 
-    <!-- Basic Page Needs
-  ================================================== -->
-    <meta charset="utf-8">
-    <title><?php the_title(); ?></title>
-    <meta name="description" content="Free Responsive Html5 Css3 Templates | zerotheme.com">
-    <meta name="author" content="www.zerotheme.com">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 
-    <!-- Mobile Specific Metas
-  ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <?php wp_head(); ?>
+    <?php wp_head(); ?>
 
 </head>
 <body <?php body_class(); ?>>
-<div class="wrap-body">
-
-    <!--////////////////////////////////////Header-->
-    <!--Top-->
-    <div id="top">
-        <div class="zerogrid">
-            <div class="row">
-                <div class="col-2-3">
-                    <ul class="list-inline top-link link">
-                        <li><i class="fa fa-map-marker"></i> 9876 Diamond hwy, California, US</li>
-                        <li><a href="contact.html"><i class="fa fa-phone"></i> 123 456 7890</a></li>
-                        <li><i class="fa fa-clock-o"></i> Mo-Fr 11:00-00:00, Sa-Sa 15:00-00:00</li>
-                    </ul>
-                </div>
-                <div class="col-1-3">
-                    <ul class="list-inline top-social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<header id="header">
+  <div class="container main-menu">
+    <div class="row align-items-center justify-content-between d-flex">
+      <div id="logo">
+        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+      </div>
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="price.html">Pricing</a></li>
+          <li class="menu-has-children"><a href="">Blog</a>
+            <ul>
+              <li><a href="blog-home.html">Blog Home</a></li>
+              <li><a href="blog-single.html">Blog Single</a></li>
+            </ul>
+          </li>
+          <li class="menu-has-children"><a href="">Pages</a>
+            <ul>
+              <li><a href="elements.html">Elements</a></li>
+              <li class="menu-has-children"><a href="">Level 2 </a>
+                <ul>
+                  <li><a href="#">Item One</a></li>
+                  <li><a href="#">Item Two</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
     </div>
-    <header>
+  </div>
+</header><!-- #header -->
 
-        <nav class="wrap-menu">
-            <div class="zerogrid">
-                <div id="menu-trigger">Menu</div>
-              <?php wp_nav_menu([
-                'theme_location' => 'top',
-                'container'      => 'ul',
-                'menu_id'        => 'menu'
-              ]) ?>
-            </div>
-        </nav>
-
-        <div class="wrap-header">
-            <div class="main-header">
-                <div class="zerogrid">
-                    <!-- Static Header -->
-                    <div class="header-text hidden-xs">
-                        <div class="t-center">
-                            <span>Bringing People Together  with a Tasty Pizza</span>
-                            <h1>Welcome to zDominos !</h1>
-                            <p>Thanks for voting us #1 Pizza in The World.<br>Call (999)123-4567</p>
-                            <a href="#" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
-                        </div>
-                    </div><!-- /header-text -->
-                </div>
-            </div>
-        </div>
-    </header>
+<!-- start banner Area -->
+<section class="relative about-banner">
+  <div class="overlay overlay-bg"></div>
+  <div class="container">
+    <div class="row d-flex align-items-center justify-content-center">
+      <div class="about-content col-lg-12">
+        <h1 class="text-white">
+          Contact Us
+        </h1>
+        <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> Contact Us</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End banner Area -->
