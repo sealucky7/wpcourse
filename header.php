@@ -4,7 +4,7 @@
   <!-- Mobile Specific Meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Favicon-->
-  <link rel="shortcut icon" href="img/fav.png">
+  <link rel="shortcut icon" href="<?php echo P_IMG_DIR ?>fav.png">
   <!-- Author Meta -->
   <meta name="author" content="colorlib">
   <!-- Meta Description -->
@@ -12,13 +12,13 @@
   <!-- Meta Keyword -->
   <meta name="keywords" content="">
   <!-- meta character set -->
-  <meta charset="UTF-8">
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
   <!-- Site Title -->
   <title><?php the_title(); ?></title>
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 
-    <?php wp_head(); ?>
+  <?php wp_head(); ?>
 
 </head>
 <body <?php body_class(); ?>>
@@ -26,7 +26,7 @@
   <div class="container main-menu">
     <div class="row align-items-center justify-content-between d-flex">
       <div id="logo">
-        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+        <a href="<?php echo home_url(); ?>"><img src="<?php echo P_IMG_DIR ?>logo.png" alt="" title="" /></a>
       </div>
       <nav id="nav-menu-container">
         <ul class="nav-menu">

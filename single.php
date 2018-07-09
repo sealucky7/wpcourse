@@ -8,7 +8,7 @@
         <div class="single-post row">
           <div class="col-lg-12">
             <div class="feature-img">
-              <img class="img-fluid" src="img/blog/feature-img1.jpg" alt="">
+              <img class="img-fluid" src="<?php echo P_IMG_DIR ?>blog/feature-img1.jpg" alt="">
             </div>
           </div>
           <div class="col-lg-3  col-md-3 meta-details">
@@ -49,10 +49,10 @@
             </div>
             <div class="row mt-30 mb-30">
               <div class="col-6">
-                <img class="img-fluid" src="img/blog/post-img1.jpg" alt="">
+                <img class="img-fluid" src="<?php echo P_IMG_DIR ?>blog/post-img1.jpg" alt="">
               </div>
               <div class="col-6">
-                <img class="img-fluid" src="img/blog/post-img2.jpg" alt="">
+                <img class="img-fluid" src="<?php echo P_IMG_DIR ?>blog/post-img2.jpg" alt="">
               </div>
               <div class="col-lg-12 mt-30">
                 <p>
@@ -69,7 +69,7 @@
           <div class="row">
             <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
               <div class="thumb">
-                <a href="#"><img class="img-fluid" src="img/blog/prev.jpg" alt=""></a>
+                <a href="#"><img class="img-fluid" src="<?php echo P_IMG_DIR ?>blog/prev.jpg" alt=""></a>
               </div>
               <div class="arrow">
                 <a href="#"><span class="lnr text-white lnr-arrow-left"></span></a>
@@ -88,7 +88,7 @@
                 <a href="#"><span class="lnr text-white lnr-arrow-right"></span></a>
               </div>
               <div class="thumb">
-                <a href="#"><img class="img-fluid" src="img/blog/next.jpg" alt=""></a>
+                <a href="#"><img class="img-fluid" src="<?php echo P_IMG_DIR ?>blog/next.jpg" alt=""></a>
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@
             <div class="single-comment justify-content-between d-flex">
               <div class="user justify-content-between d-flex">
                 <div class="thumb">
-                  <img src="img/blog/c1.jpg" alt="">
+                  <img src="<?php echo P_IMG_DIR ?>blog/c1.jpg" alt="">
                 </div>
                 <div class="desc">
                   <h5><a href="#">Emilly Blunt</a></h5>
@@ -118,7 +118,7 @@
             <div class="single-comment justify-content-between d-flex">
               <div class="user justify-content-between d-flex">
                 <div class="thumb">
-                  <img src="img/blog/c2.jpg" alt="">
+                  <img src="<?php echo P_IMG_DIR ?>blog/c2.jpg" alt="">
                 </div>
                 <div class="desc">
                   <h5><a href="#">Elsie Cunningham</a></h5>
@@ -137,7 +137,7 @@
             <div class="single-comment justify-content-between d-flex">
               <div class="user justify-content-between d-flex">
                 <div class="thumb">
-                  <img src="img/blog/c3.jpg" alt="">
+                  <img src="<?php echo P_IMG_DIR ?>blog/c3.jpg" alt="">
                 </div>
                 <div class="desc">
                   <h5><a href="#">Annie Stephens</a></h5>
@@ -156,7 +156,7 @@
             <div class="single-comment justify-content-between d-flex">
               <div class="user justify-content-between d-flex">
                 <div class="thumb">
-                  <img src="img/blog/c4.jpg" alt="">
+                  <img src="<?php echo P_IMG_DIR ?>blog/c4.jpg" alt="">
                 </div>
                 <div class="desc">
                   <h5><a href="#">Maria Luna</a></h5>
@@ -175,7 +175,7 @@
             <div class="single-comment justify-content-between d-flex">
               <div class="user justify-content-between d-flex">
                 <div class="thumb">
-                  <img src="img/blog/c5.jpg" alt="">
+                  <img src="<?php echo P_IMG_DIR ?>blog/c5.jpg" alt="">
                 </div>
                 <div class="desc">
                   <h5><a href="#">Ina Hayes</a></h5>
@@ -221,7 +221,7 @@
             </form>
           </div>
           <div class="single-sidebar-widget user-info-widget">
-            <img src="img/blog/user-info.png" alt="">
+            <img src="<?php echo P_IMG_DIR ?>blog/user-info.png" alt="">
             <a href="#"><h4>Charlie Barber</h4></a>
             <p>
               Senior blog writer
@@ -241,7 +241,7 @@
             <div class="popular-post-list">
               <div class="single-post-list d-flex flex-row align-items-center">
                 <div class="thumb">
-                  <img class="img-fluid" src="img/blog/pp1.jpg" alt="">
+                  <img class="img-fluid" src="<?php echo P_IMG_DIR ?>blog/pp1.jpg" alt="">
                 </div>
                 <div class="details">
                   <a href="blog-single.html"><h6>Space The Final Frontier</h6></a>
@@ -250,7 +250,7 @@
               </div>
               <div class="single-post-list d-flex flex-row align-items-center">
                 <div class="thumb">
-                  <img class="img-fluid" src="img/blog/pp2.jpg" alt="">
+                  <img class="img-fluid" src="<?php echo P_IMG_DIR ?>blog/pp2.jpg" alt="">
                 </div>
                 <div class="details">
                   <a href="blog-single.html"><h6>The Amazing Hubble</h6></a>
@@ -259,7 +259,7 @@
               </div>
               <div class="single-post-list d-flex flex-row align-items-center">
                 <div class="thumb">
-                  <img class="img-fluid" src="img/blog/pp3.jpg" alt="">
+                  <img class="img-fluid" src="<?php echo P_IMG_DIR ?>blog/pp3.jpg" alt="">
                 </div>
                 <div class="details">
                   <a href="blog-single.html"><h6>Astronomy Or Astrology</h6></a>
@@ -268,7 +268,7 @@
               </div>
               <div class="single-post-list d-flex flex-row align-items-center">
                 <div class="thumb">
-                  <img class="img-fluid" src="img/blog/pp4.jpg" alt="">
+                  <img class="img-fluid" src="<?php echo P_IMG_DIR ?>blog/pp4.jpg" alt="">
                 </div>
                 <div class="details">
                   <a href="blog-single.html"><h6>Asteroids telescope</h6></a>
@@ -278,7 +278,7 @@
             </div>
           </div>
           <div class="single-sidebar-widget ads-widget">
-            <a href="#"><img class="img-fluid" src="img/blog/ads-banner.jpg" alt=""></a>
+            <a href="#"><img class="img-fluid" src="<?php echo P_IMG_DIR ?>blog/ads-banner.jpg" alt=""></a>
           </div>
           <div class="single-sidebar-widget post-category-widget">
             <h4 class="category-title">Post Catgories</h4>
