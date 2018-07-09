@@ -86,8 +86,44 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 posts-list">
+          <?php if ( have_posts()): ?>
+              <?php while ( have_posts()): the_post();?>
 
-        <div class="single-post row">
+              <div class="single-post row">
+                <div class="col-lg-3  col-md-3 meta-details">
+                  <ul class="tags">
+                    <li><a href="#">Food,</a></li>
+                    <li><a href="#">Technology,</a></li>
+                    <li><a href="#">Politics,</a></li>
+                    <li><a href="#">Lifestyle</a></li>
+                  </ul>
+                  <div class="user-details row">
+                    <p class="user-name col-lg-12 col-md-12 col-6"><a href="#"><?php echo get_the_author(); ?></a> <span class="lnr lnr-user"></span></p>
+                    <p class="date col-lg-12 col-md-12 col-6"><a href="#"><?php echo get_the_date(); ?></a> <span class="lnr
+                    lnr-calendar-full"></span></p>
+                    <p class="view col-lg-12 col-md-12 col-6"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
+                    <p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>
+                  </div>
+                </div>
+                <div class="col-lg-9 col-md-9 ">
+                  <div class="feature-img">
+                      <?php the_post_thumbnail(); ?>
+<!--                    <img class="img-fluid" src="" alt="images">-->
+                  </div>
+                  <a class="posts-title" href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+                  <p class="excert">
+                    MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                  </p>
+                  <a href="<?php the_permalink(); ?>" class="primary-btn">View More</a>
+                </div>
+              </div>
+
+            <?php endwhile; ?>
+          <?php endif; ?>
+
+
+
+<!--        <div class="single-post row">
           <div class="col-lg-3  col-md-3 meta-details">
             <ul class="tags">
               <li><a href="#">Food,</a></li>
@@ -104,33 +140,7 @@
           </div>
           <div class="col-lg-9 col-md-9 ">
             <div class="feature-img">
-              <img class="img-fluid" src="<?php echo P_IMG_DIR ?>blog/feature-img1.jpg" alt="">
-            </div>
-            <a class="posts-title" href="blog-single.html"><h3>Astronomy Binoculars A Great Alternative</h3></a>
-            <p class="excert">
-              MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
-            </p>
-            <a href="blog-single.html" class="primary-btn">View More</a>
-          </div>
-        </div>
-        <div class="single-post row">
-          <div class="col-lg-3  col-md-3 meta-details">
-            <ul class="tags">
-              <li><a href="#">Food,</a></li>
-              <li><a href="#">Technology,</a></li>
-              <li><a href="#">Politics,</a></li>
-              <li><a href="#">Lifestyle</a></li>
-            </ul>
-            <div class="user-details row">
-              <p class="user-name col-lg-12 col-md-12 col-6"><a href="#">Mark wiens</a> <span class="lnr lnr-user"></span></p>
-              <p class="date col-lg-12 col-md-12 col-6"><a href="#">12 Dec, 2017</a> <span class="lnr lnr-calendar-full"></span></p>
-              <p class="view col-lg-12 col-md-12 col-6"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
-              <p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>
-            </div>
-          </div>
-          <div class="col-lg-9 col-md-9 ">
-            <div class="feature-img">
-              <img class="img-fluid" src="<?php echo P_IMG_DIR ?>blog/feature-img2.jpg" alt="">
+              <img class="img-fluid" src="<?php /*echo P_IMG_DIR */?>blog/feature-img2.jpg" alt="">
             </div>
             <a class="posts-title" href="blog-single.html"><h3>The Basics Of Buying A Telescope</h3></a>
             <p class="excert">
@@ -156,7 +166,7 @@
           </div>
           <div class="col-lg-9 col-md-9">
             <div class="feature-img">
-              <img class="img-fluid" src="<?php echo P_IMG_DIR ?>blog/feature-img3.jpg" alt="">
+              <img class="img-fluid" src="<?php /*echo P_IMG_DIR */?>blog/feature-img3.jpg" alt="">
             </div>
             <a class="posts-title" href="blog-single.html"><h3>The Glossary Of Telescopes</h3></a>
             <p class="excert">
@@ -182,7 +192,7 @@
           </div>
           <div class="col-lg-9 col-md-9">
             <div class="feature-img">
-              <img class="img-fluid" src="<?php echo P_IMG_DIR ?>blog/feature-img4.jpg" alt="">
+              <img class="img-fluid" src="<?php /*echo P_IMG_DIR */?>blog/feature-img4.jpg" alt="">
             </div>
             <a class="posts-title" href="blog-single.html"><h3>The Night Sky</h3></a>
             <p class="excert">
@@ -208,7 +218,7 @@
           </div>
           <div class="col-lg-9 col-md-9">
             <div class="feature-img">
-              <img class="img-fluid" src="<?php echo P_IMG_DIR ?>blog/feature-img5.jpg" alt="">
+              <img class="img-fluid" src="<?php /*echo P_IMG_DIR */?>blog/feature-img5.jpg" alt="">
             </div>
             <a class="posts-title" href="blog-single.html"><h3>Telescopes 101</h3></a>
             <p class="excert">
@@ -216,8 +226,10 @@
             </p>
             <a href="blog-single.html" class="primary-btn">View More</a>
           </div>
-        </div>
+        </div>-->
+
         <nav class="blog-pagination justify-content-center d-flex">
+            <?php the_posts_pagination(); ?>
           <ul class="pagination">
             <li class="page-item">
               <a href="#" class="page-link" aria-label="Previous">
