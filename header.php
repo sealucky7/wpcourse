@@ -29,7 +29,12 @@
         <a href="<?php echo home_url(); ?>"><img src="<?php echo P_IMG_DIR ?>logo.png" alt="" title="" /></a>
       </div>
       <nav id="nav-menu-container">
-        <ul class="nav-menu">
+        <?php wp_nav_menu(array(
+          'theme_location' => 'top',
+          'container'      => 'ul',
+          'menu_class'     => 'nav-menu'
+        )) ?>
+        <!--<ul class="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
@@ -53,24 +58,10 @@
             </ul>
           </li>
           <li><a href="contact.html">Contact</a></li>
-        </ul>
+        </ul>-->
       </nav><!-- #nav-menu-container -->
     </div>
   </div>
 </header><!-- #header -->
 
-<!-- start banner Area -->
-<section class="relative about-banner">
-  <div class="overlay overlay-bg"></div>
-  <div class="container">
-    <div class="row d-flex align-items-center justify-content-center">
-      <div class="about-content col-lg-12">
-        <h1 class="text-white">
-          Contact Us
-        </h1>
-        <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> Contact Us</a></p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End banner Area -->
+
