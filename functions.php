@@ -42,8 +42,31 @@
     add_action('after_setup_theme', function (){
         register_nav_menu('top', 'Верхнее меню');
         add_theme_support('post-thumbnails');
+        add_theme_support('title-tag');
     });
 
+    add_action('widgets_init', function (){
+        register_sidebar( array(
+            'name'          => 'Правый сайдбар',
+            'id'            => "right-sidebar",
+            'description'   => '',
+            'class'         => '',
+            'before_widget' => '<div id="%1$s" class="widget single-sidebar-widget %2$s">',
+            'after_widget'  => "</div>\n",
+            'before_title'  => '<div class="widgettitle">',
+            'after_title'   => "</div>\n",
+        ) );
+    });
+
+    // удаляет H2 из шаблона пагинации
+    add_filter('navigation_markup_template', function ( $template, $class ){
+
+        return '
+        <nav class="navigation %1$s" role="navigation">
+            <div class="nav-links">%3$s</div>
+        </nav>    
+        ';
+    }, 10, 2 );
 
 
 ?>

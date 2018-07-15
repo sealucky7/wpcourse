@@ -3477,15 +3477,12 @@ dl.accordion.time-line:before {
 }
 
 .post-content-area .single-post .meta-details .tags {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-.post-content-area .single-post .meta-details .tags li {
+.post-content-area .single-post .meta-details .tags a {
   display: inline-block;
   font-size: 14px;
-}
-
-.post-content-area .single-post .meta-details .tags li a {
   color: #222;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -3493,7 +3490,7 @@ dl.accordion.time-line:before {
   transition: all 0.3s ease 0s;
 }
 
-.post-content-area .single-post .meta-details .tags li a:hover {
+.post-content-area .single-post .meta-details .tags a:hover {
   color: #8490ff;
 }
 
@@ -3728,6 +3725,10 @@ dl.accordion.time-line:before {
   color: #8490ff;
 }
 
+.widget-wrap .user-info-widget p {
+  margin-bottom: 0;
+}
+
 .widget-wrap .popular-post-widget .popular-title {
   background: #8490ff;
   color: #fff;
@@ -3890,15 +3891,17 @@ dl.accordion.time-line:before {
   margin-bottom: 0px;
 }
 
-.widget-wrap .tag-cloud-widget .tagcloud-title {
+.widget-wrap .widgettitle {
   background: #8490ff;
   color: #fff;
   text-align: center;
-  padding: 12px 0px;
+  padding: 12px 0;
   margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
-.widget-wrap .tag-cloud-widget ul li {
+.widget-wrap .widget_categories ul li {
   display: inline-block;
   border: 1px solid #eee;
   background: #fff;
@@ -3910,15 +3913,15 @@ dl.accordion.time-line:before {
   transition: all 0.3s ease 0s;
 }
 
-.widget-wrap .tag-cloud-widget ul li:hover {
+.widget-wrap .widget_categories ul li:hover {
   background: #8490ff;
 }
 
-.widget-wrap .tag-cloud-widget ul li:hover a {
+.widget-wrap .widget_categories ul li:hover a {
   color: #fff;
 }
 
-.widget-wrap .tag-cloud-widget ul li a {
+.widget-wrap .widget_categories ul li a {
   font-size: 12px;
   color: #222;
 }
