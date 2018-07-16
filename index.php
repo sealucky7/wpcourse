@@ -109,7 +109,7 @@
                   </div>
                   <a class="posts-title" href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
                   <p class="excert">
-                    MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                    <?php echo get_field('description'); ?>
                   </p>
                   <a href="<?php the_permalink(); ?>" class="primary-btn">View More</a>
                 </div>
