@@ -3658,6 +3658,7 @@ dl.accordion.time-line:before {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
   background: #8490ff;
+  outline: none;
 }
 
 .widget-wrap .search-widget ::-webkit-input-placeholder {
