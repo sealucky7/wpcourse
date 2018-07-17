@@ -3583,23 +3583,29 @@ dl.accordion.time-line:before {
   font-weight: 400;
 }
 
-.blog-pagination .page-item.active .page-link {
+.blog-pagination .nav-links span.current {
   background-color: #8490ff;
   border-color: transparent;
   color: #fff;
 }
 
-.blog-pagination .page-link {
+.blog-pagination .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-pagination .nav-links > span,
+.blog-pagination .nav-links > a {
   position: relative;
   display: block;
-  padding: 0.5rem 0.75rem;
+  padding: 5px 10px;
   margin-left: -1px;
-  line-height: 1.25;
   color: #777777;
   border: none;
 }
 
-.blog-pagination .page-link .lnr {
+.blog-pagination .nav-links .lnr {
   font-weight: 600;
 }
 
@@ -3608,7 +3614,7 @@ dl.accordion.time-line:before {
   border-radius: 0;
 }
 
-.blog-pagination .page-link:hover {
+.blog-pagination .nav-links > a:hover {
   color: #fff;
   text-decoration: none;
   background-color: #8490ff;
